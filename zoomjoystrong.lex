@@ -6,8 +6,8 @@ int c;
 %}
 
 %%
-end			      { return END; }
-;                             { return EOS; }
+end			      { return YYEOF; }
+;                             { return ; }
 point                         { return POINT; }
 line                          { return LINE; }
 circle                        { return CIRCLE; }
